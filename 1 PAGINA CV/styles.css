@@ -1,0 +1,83 @@
+@font-face{
+	font-family: SciFly;
+	src: url(fonts/SciFly/SciFly-Sans.ttf) format("opentype");
+}
+
+body{
+	margin: 0;
+}
+
+.cabezera_flex , .categorias_flex, .informacion_flex{
+	display: flex;
+    display: -webkit-flex;
+    text-align: center;
+}
+
+.cabezera_flex {
+	padding: 0;
+	font-family: SciFly;
+    -webkit-flex-direction: column;
+	background-color: rgb(154,205,050);
+}
+
+
+.contenedor_informacion{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.categorias_flex{
+    -webkit-flex-direction: column;
+    min-width: 30%;
+    max-width: 30%;
+	background-color: rgb(23,178,170);
+}
+
+.categorias_flex img {
+	 border-radius: 25px;
+	 max-width: 70%;
+	 margin: 5% auto;
+	 max-height: 30%;
+}
+
+.categorias_flex ul{
+	padding: 0;
+}
+
+.categorias_flex li{
+	list-style-type: none;
+	background-color: rgb(128,128,128);
+	width: 100%;
+}
+
+.categorias_flex li:hover {
+	transition: 0.9s;
+	margin: 2.0%;
+	background: rgba(0,0,0,.5);
+}
+
+.categorias_flex input{
+	background-color: transparent;
+	border-width: 0;
+	width: 70%;
+	padding: 5%;
+	outline: none;
+}
+
+.categorias_flex input:hover {
+	transition: 0.4s;
+	color: white;
+}
+.informacion_flex{
+    display: none;
+    -webkit-flex-direction: column;
+    min-width: 70%;
+    max-width: 70%;
+    font-family: SciFly;
+	background-color: rgb(135,206,235);
+}
+
+.informacion_flex ul li{
+	list-style-type: none;
+}
